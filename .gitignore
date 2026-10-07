@@ -53,3 +53,8 @@ yarn-debug.log
 yarn-error.log
 # draw.io
 *:Zone.Identifier
+# Vite build output (npm run build)
+/webroot/css/app.css
+/webroot/css/fonts/
+/webroot/js/app.js
+/webroot/THIRD_PARTY_LICENSES.md

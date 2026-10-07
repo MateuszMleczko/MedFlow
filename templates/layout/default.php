@@ -14,36 +14,31 @@
  * @var \App\View\AppView $this
  */
 
-$cakeDescription = 'CakePHP: the rapid development php framework';
+$cakeDescription = 'MedFlow';
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="pl">
 <head>
     <?= $this->Html->charset() ?>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>
-        <?= $cakeDescription ?>:
-        <?= $this->fetch('title') ?>
-    </title>
+    <title><?= $this->fetch('title') ?> | <?= $cakeDescription ?></title>
     <?= $this->Html->meta('icon') ?>
 
-    <?= $this->Html->css(['normalize.min', 'milligram.min', 'fonts', 'cake']) ?>
+    <?= $this->Html->css('app') ?>
 
     <?= $this->fetch('meta') ?>
     <?= $this->fetch('css') ?>
     <?= $this->fetch('script') ?>
 </head>
 <body>
-    <nav class="top-nav">
-        <div class="top-nav-title">
-            <a href="<?= $this->Url->build('/') ?>"><span>Cake</span>PHP</a>
-        </div>
-        <div class="top-nav-links">
-            <a target="_blank" rel="noopener" href="https://book.cakephp.org/5/">Documentation</a>
-            <a target="_blank" rel="noopener" href="https://api.cakephp.org/">API</a>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom">
+        <div class="container">
+            <a class="navbar-brand fw-semibold" href="<?= $this->Url->build('/') ?>">
+                <i class="bi bi-heart-pulse text-primary"></i> <?= $cakeDescription ?>
+            </a>
         </div>
     </nav>
-    <main class="main">
+    <main class="py-4">
         <div class="container">
             <?= $this->Flash->render() ?>
             <?= $this->fetch('content') ?>
@@ -51,5 +46,6 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
     </main>
     <footer>
     </footer>
+<?= $this->Html->script('app', ['type' => 'module']) ?>
 </body>
 </html>

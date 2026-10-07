@@ -56,3 +56,17 @@ Other environment agnostic settings can be changed in `config/app.php`.
 The app skeleton uses [Milligram](https://milligram.io/) (v1.3) minimalist CSS
 framework by default. You can, however, replace it with any other library or
 custom styles.
+
+## Front-end (Bootstrap 5 + Bootstrap Icons)
+
+Styles and scripts live in `resources/` and are built with Vite into `webroot/` (build output is git-ignored).
+
+```bash
+npm install
+npm run build        # one-off production build
+npm run build:watch  # rebuild on changes
+```
+
+- `resources/scss/_variables.scss` - theme overrides for Bootstrap variables (colors, fonts, radius)
+- `resources/scss/app.scss` - Bootstrap import + own styles
+- `resources/js/app.js` - Bootstrap JS (exposed as `window.bootstrap`) and Bootstrap Icons
