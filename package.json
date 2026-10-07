@@ -1,0 +1,30 @@
+{
+  "name": "med-flow",
+  "version": "1.0.0",
+  "private": true,
+  "description": "MedFlow - front-end assets (Bootstrap 5, Bootstrap Icons) built with Vite",
+  "type": "module",
+  "scripts": {
+    "build": "vite build",
+    "build:watch": "vite build --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MateuszMleczko/MedFlow.git"
+  },
+  "author": "Mateusz Mleczko",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/MateuszMleczko/MedFlow/issues"
+  },
+  "homepage": "https://github.com/MateuszMleczko/MedFlow#readme",
+  "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.8",
+    "bootstrap-icons": "^1.13.1"
+  },
+  "devDependencies": {
+    "sass": "^1.105.1",
+    "vite": "^8.3.2"
+  }
+}

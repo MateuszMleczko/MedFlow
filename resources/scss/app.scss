@@ -1,0 +1,14 @@
+// Abstracts
+@use 'variables' as *;
+
+// Bootstrap
+@use '../../node_modules/bootstrap/scss/bootstrap' with (
+  $primary: $primary,
+  $secondary: $secondary,
+  $success: $success,
+  $danger: $danger,
+  $font-family-sans-serif: $font-family-sans-serif,
+  $border-radius: $border-radius
+);
+
+// Components - own styles go below
